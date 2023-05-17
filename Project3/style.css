@@ -36,14 +36,20 @@ body{
 }
 
 .card1 {
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 100px;
-    height: 200px;
+    height: 300px;
     background-color: aqua;
     width: 499px;
     margin-left: 100px;
 }
 .card2 {
-    height: 200px;
+    background-image: url("images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     background-color: aqua;
     width: 499px;
     margin-left: 300px;
