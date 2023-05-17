@@ -1,0 +1,23 @@
+body{
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container{
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+.left-container p{
+    color: white;
+}
+
+.right-container{
+    background-color: white;
+}
