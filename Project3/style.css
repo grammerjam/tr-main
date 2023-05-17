@@ -1,3 +1,10 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* not sure if the border is still neccessary but we'll see, i leave that to you lol */
 body{
     border: red solid 1px;
 }
@@ -5,6 +12,11 @@ body{
 .main-container{
     display: flex;
     flex-direction: row;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
 }
 
 .left-container{
@@ -16,8 +28,23 @@ body{
 
 .left-container p{
     color: white;
+    
 }
 
 .right-container{
     background-color: white;
+}
+
+.card1 {
+    margin-top: 100px;
+    height: 200px;
+    background-color: aqua;
+    width: 499px;
+    margin-left: 100px;
+}
+.card2 {
+    height: 200px;
+    background-color: aqua;
+    width: 499px;
+    margin-left: 300px;
 }
