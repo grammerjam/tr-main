@@ -1,0 +1,38 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+.main-container{
+    
+}
+*/
+
+.left-container{
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.right-container{
+    background-color: white;
+}
+
+.card1 {
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    height: 300px;
+    width: 499px;
+}
+.card2 {
+    background-image: url("images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    height: 300px;
+    width: 499px;
+}

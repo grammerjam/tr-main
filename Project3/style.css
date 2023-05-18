@@ -61,12 +61,25 @@ body{
     padding-left: 100px;
 }
 
-.cardwords {
-    margin-bottom: 4px;
-}
-
 .cardinput {
     height: 30px;
     width: 300px;
+    border-radius: 5px;
+}
+
+.cardmonth {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.cardyr {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+.cardcvc {
+    height: 30px;
+    width: 154px;
     border-radius: 5px;
 }
