@@ -15,7 +15,6 @@
 <body>
   <div class="main-container">
     <div class="left-container">
-      <p>left container</p>
       <div class="card1">
         <p>left container</p>
       </div>
@@ -24,7 +23,33 @@
       </div>
     </div>
     <div class="right-container">
-      <p>right container</p>
+      <div class="form">
+          <form>
+            <div class="div">
+              <label class="cardwords" for="cname">Name on Card</label>
+            </div>
+            <div class="div">
+              <input class="cardinput" type="text" id="cname" name="cardname" placeholder="John More Doe">
+            </div>
+            <div class="div">
+              <label class="cardwords" for="ccnum">Credit card number</label>
+            </div>
+            <div class="div">
+              <input class="cardinput" type="text" id="cnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            </div>
+            <div>
+              <div>
+                <label class="cardwords" for="expmonth">Exp. Date (MM/YY)</label>
+                <label class="cardwords" for="expmonth">CVC</label>
+              <div>
+              <div>
+                <input class="cardmonth" type="text" id="expmonth" name="expmonth" placeholder="07">
+                <input class="cardyr" type="text" id="expyear" name="expyear" placeholder="27">
+                <input class="cardcvc" type="text" id="cvc" name="cvc" placeholder="333">
+              </div>
+            </div>
+          </form>
+      </div>
     </div>
   </div>
 

@@ -26,11 +26,6 @@ body{
     height: 100%;
 }
 
-.left-container p{
-    color: white;
-    
-}
-
 .right-container{
     background-color: white;
 }
@@ -39,9 +34,9 @@ body{
     background-image: url("images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
     margin-top: 100px;
     height: 300px;
-    background-color: aqua;
     width: 499px;
     margin-left: 100px;
 }
@@ -49,8 +44,29 @@ body{
     background-image: url("images/bg-card-back.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
     height: 300px;
-    background-color: aqua;
     width: 499px;
     margin-left: 300px;
+}
+
+.form {
+    background-color: aqua;
+    margin-top: 150px;
+    margin-left: 100px;
+    min-height: 400px;
+    width: 499px;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.cardwords {
+    margin-bottom: 4px;
+}
+
+.cardinput {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
 }
