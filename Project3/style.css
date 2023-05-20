@@ -89,3 +89,9 @@ body{
     width: 120px;
     border-radius: 5px;
 }
+
+/* margins & paddings for error messages */
+.inputs, .inputs-expiration-cvc {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
