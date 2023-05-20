@@ -9,6 +9,10 @@ body{
     display: flex;
 }
 
+/*div {*/
+/*    border: red solid 1px;*/
+/*}*/
+
 .main-container{
     display: flex;
     flex-direction: row;
@@ -39,7 +43,28 @@ body{
     height: 300px;
     width: 499px;
     margin-left: 100px;
+    margin-bottom: 20px;
+    color: white;
 }
+
+.card-logo img{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card-number {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+.bottom-of-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 .card2 {
     background-image: url("images/bg-card-back.png");
     background-repeat: no-repeat;
@@ -58,6 +83,11 @@ body{
     width: 499px;
     display: flex;
     padding: 50px;
+}
+
+.form small {
+    /*visibility: hidden;*/
+    position: absolute;
 }
 
 .cardinput {
@@ -94,4 +124,9 @@ body{
 .inputs, .inputs-expiration-cvc {
     margin-bottom: 10px;
     padding-bottom: 20px;
+}
+
+.labels, .expiration-cvc label {
+    display: inline-block;
+    margin-top: 5px;
 }
