@@ -4,14 +4,10 @@
     box-sizing: border-box;
 }
 
-/* not sure if the border is still neccessary but we'll see, i leave that to you lol */
 body{
     display: flex;
+    font-family: 'Play', sans-serif;
 }
-
-/*div {*/
-/*    border: red solid 1px;*/
-/*}*/
 
 .main-container{
     display: flex;
@@ -47,17 +43,19 @@ body{
     color: white;
 }
 
-.card-logo img{
+.card1 img{
     margin-left: 20px;
     margin-top: 20px;
 }
 
+/* display of the card number */
 .card-number {
     display: flex;
     justify-content: center;
     margin-top: 125px;
 }
 
+/* cardholder's info at the bottom of the card */
 .bottom-of-card {
     display: flex;
     flex-direction: row;
@@ -75,6 +73,7 @@ body{
     margin-left: 300px;
 }
 
+/* the form */
 .form {
     background-color: aqua;
     margin-top: 150px;
@@ -88,6 +87,9 @@ body{
 .form small {
     /*visibility: hidden;*/
 }
+.form input{
+    display: block;
+}
 
 .cardinput {
     height: 30px;
@@ -95,16 +97,18 @@ body{
     border-radius: 5px;
 }
 
+/* styling for the labels for expiration and CVC */
 .labels-expiration-cvc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* input fields for the expiration dates & CVC */
 .inputs-expiration-cvc {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .cardmonth, .cardyear {
@@ -122,14 +126,10 @@ body{
 /* margins & paddings for error messages */
 .inputs, .inputs-expiration-cvc {
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.labels, .expiration-cvc label {
-    display: inline-block;
-    margin-top: 5px;
-}
-
+/* styling for the submit button */
 button {
     color: white;
     background-color: black;
