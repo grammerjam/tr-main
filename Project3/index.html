@@ -43,16 +43,16 @@
             <div class="labels">
               <label class="cardwords" for="cname">Name on Card</label>
             </div>
-            <div class="inputs">
+            <div class="inputs success">
               <input class="cardinput" type="text" id="cname" name="cardname" placeholder="e.g. John More Doe">
-              <small>error message</small>
+              <small>Cannot be blank</small>
             </div>
             <div class="labels">
               <label class="cardwords" id="ccnum">Credit card number</label>
             </div>
-            <div class="inputs">
+            <div class="inputs error">
               <input class="cardinput" type="text" id="cnum" name="cardnumber" placeholder="e.g. 1111-2222-3333-4444">
-              <small>error message</small>
+              <small>Wrong format. Numbers only</small>
             </div>
             <div>
               <div class="expiration-cvc">
@@ -63,9 +63,9 @@
                 <div class="inputs-expiration-cvc">
                   <input class="cardmonth" type="text" id="expmonth" name="expmonth" placeholder="07">
                   <input class="cardyear" type="text" id="expyear" name="expyear" placeholder="27">
-                  <small>error message</small>
+                  <small>Can't be blank</small>
                   <input class="cardcvc" type="text" id="cvc" name="cvc" placeholder="e.g. 333">
-                  <small>error message</small>
+                  <small>Can't be blank</small>
                 </div>
               </div>
               <div class="confirm-button">

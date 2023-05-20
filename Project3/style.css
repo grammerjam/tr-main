@@ -125,8 +125,27 @@ body{
 
 /* margins & paddings for error messages */
 .inputs, .inputs-expiration-cvc {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+/* success messages */
+.form small{
+    visibility: hidden;
+}
+
+.labels.success input {
+    border: green;
+}
+
+/* error messages */
+.labels.error input {
+    border: red;
+}
+
+.form.inputs.error small{
+    visibility: visible;
+    color: red;
 }
 
 /* styling for the submit button */
