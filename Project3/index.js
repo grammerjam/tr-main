@@ -18,9 +18,10 @@ function checkInputs() {
     const expYearValue = expYear.value.trim();
     const cvcValue = cvc.value.trim();
 
-    if(cardHolderValue == ''){
+    if(cardHolderValue === ''){
         //show error
         //add error class
+        setErrorFor(cardHolderName, 'cardholer name cannot be blank');
     } else {
         //add success class
     }
