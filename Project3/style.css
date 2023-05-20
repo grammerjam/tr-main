@@ -87,7 +87,6 @@ body{
 
 .form small {
     /*visibility: hidden;*/
-    position: absolute;
 }
 
 .cardinput {
@@ -129,4 +128,13 @@ body{
 .labels, .expiration-cvc label {
     display: inline-block;
     margin-top: 5px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
 }
