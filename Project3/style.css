@@ -1,12 +1,12 @@
 * {
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* not sure if the border is still neccessary but we'll see, i leave that to you lol */
 body{
-    border: red solid 1px;
+    display: flex;
 }
 
 .main-container{
@@ -57,8 +57,7 @@ body{
     min-height: 400px;
     width: 499px;
     display: flex;
-    padding-top: 40px;
-    padding-left: 100px;
+    padding: 50px;
 }
 
 .cardinput {
@@ -67,19 +66,26 @@ body{
     border-radius: 5px;
 }
 
-.cardmonth {
+.labels-expiration-cvc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputs-expiration-cvc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cardmonth, .cardyear {
     height: 30px;
     width: 70px;
     border-radius: 5px;
 }
 
-.cardyr {
-    height: 30px;
-    width: 70px;
-    border-radius: 5px;
-}
 .cardcvc {
     height: 30px;
-    width: 154px;
+    width: 120px;
     border-radius: 5px;
 }
