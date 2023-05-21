@@ -130,7 +130,7 @@ body{
 }
 
 /* success messages */
-.form small{
+.inputs small, .expiration-cvc small{
     visibility: hidden;
 }
 
