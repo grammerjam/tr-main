@@ -134,12 +134,12 @@ body{
     visibility: hidden;
 }
 
-.labels.success input {
+.inputs.success input {
     border: green;
 }
 
 /* error messages */
-.labels.error input {
+.inputs.error input {
     border: red;
 }
 
