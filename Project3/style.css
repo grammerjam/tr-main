@@ -84,9 +84,6 @@ body{
     padding: 50px;
 }
 
-.form small {
-    /*visibility: hidden;*/
-}
 .form input{
     display: block;
 }
