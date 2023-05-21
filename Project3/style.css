@@ -135,12 +135,12 @@ body{
 }
 
 .inputs.success input {
-    border: green;
+    border: green solid 2px;
 }
 
 /* error messages */
 .inputs.error input {
-    border: red;
+    border: red solid 2px;
 }
 
 .form.inputs.error small{
