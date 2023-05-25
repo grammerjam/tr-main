@@ -13,12 +13,12 @@ form.addEventListener('submit', (e) => {
     // display the confirmation
     // else
     // do nothing & show the form
-    if(allRequiredFieldsAreFilledOut() === true){
-        //display the confirmation
-        document.getElementById("confirmation").style.display = "block";
-        //hide the form
-        document.getElementById("form").style.display = "none";
-    }
+    // if(allRequiredFieldsAreFilledOut() === true){
+    //     //display the confirmation
+    //     document.getElementById("confirmation").style.display = "block";
+    //     //hide the form
+    //     document.getElementById("form").style.display = "none";
+    // }
 });
 
 // function allRequiredFieldsAreFilledOut(){
