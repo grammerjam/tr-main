@@ -7,9 +7,32 @@ const cvc = document.getElementById("cvc");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log("clicking the confirm button");
-    checkInputs();
+
+    //checkInputs();
+    //if all required fields are filled out
+    // display the confirmation
+    // else
+    // do nothing & show the form
+    if(allRequiredFieldsAreFilledOut()){
+        //display the confirmation
+        document.getElementById("confirmation").style.display = "block";
+        //hide the form
+        document.getElementById("form").style.display = "none";
+    }
 });
+
+function allRequiredFieldsAreFilledOut(){
+    // if(checkForValidCardholderName() === true
+    // && checksIfValidFormatFor(creditCardValue, creditCardNumber, "Credit Card cannot be blank", "Invalid Format. Numbers only") === true
+    // && checksIfValidFormatFor(expMonthValue, expYear, "Cannot be blank", "Invalid Format. Numbers only") === true
+    // && checksIfValidFormatFor(expYearValue, expYear, "Cannot be blank", "Invalid Format. Numbers only") === true
+    // && checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only") === true){
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    return true;
+}
 
 function checkInputs() {
     //get values from inputs
@@ -19,39 +42,47 @@ function checkInputs() {
     const expYearValue = expYear.value.trim();
     const cvcValue = cvc.value.trim();
 
-    //console.log(cardHolderValue);
-
     //check for valid cardholder name
-    if (cardHolderValue === "") {
+    checkForValidCardholderName(cardHolderValue, 'Cardholder name cannot be blank');
+
+    //check for valid credit card format
+    checksIfValidFormatFor(creditCardValue, creditCardNumber, "Credit Card cannot be blank", "Invalid Format. Numbers only");
+
+    //check for valid expiration dates for month
+    checksIfValidFormatFor(expMonthValue, expYear, "Cannot be blank", "Invalid Format. Numbers only");
+
+    //check for valid expiration dates for year
+    checksIfValidFormatFor(expYearValue, expYear, "Cannot be blank", "Invalid Format. Numbers only");
+
+    //check for valid CVC
+    checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only");
+}
+
+function checkForValidCardholderName(cardholderValue, errorMessage){
+    //check for valid cardholder name
+    if (cardholderValue === "") {
         //show error
         //add error class
-        setErrorFor(cardHolderName, 'Cardholder name cannot be blank');
+        setErrorFor(cardHolderName, errorMessage);
+        return false;
     } else {
         //add success class
         setSuccessFor(cardHolderName);
+        return true;
     }
-
-    //checks for valid credit card format
-    checksIfValidFormatFor(creditCardValue, creditCardNumber, "Credit Card cannot be blank", "Invalid Format. Numbers only");
-
-    //checks for valid expiration dates for month
-    checksIfValidFormatFor(expMonthValue, expMonth, "Cannot be blank", "Invalid Format. Numbers only");
-
-    //checks for valid expiration dates for year
-    checksIfValidFormatFor(expYearValue, expYear, "Cannot be blank", "Invalid Format. Numbers only");
-
-    //checks for valid CVC
-    checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only");
 }
 
 function checksIfValidFormatFor(inputFieldValue, inputFieldName, errorMessage1, errorMessage2) {
     //checks for valid format
     if (inputFieldValue === "") {
         setErrorFor(inputFieldName, errorMessage1);
+        return false;
     } else if (!isValidFormat(inputFieldValue)) {
         setErrorFor(inputFieldName, errorMessage2);
+        return false;
     } else {
         setSuccessFor(inputFieldName);
+        return true;
     }
 }
 

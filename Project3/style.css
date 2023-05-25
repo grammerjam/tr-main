@@ -9,6 +9,10 @@ body{
     font-family: 'Play', sans-serif;
 }
 
+.team-name-header{
+    border: 1px solid red;
+}
+
 .main-container{
     display: flex;
     flex-direction: row;
@@ -20,6 +24,7 @@ body{
 }
 
 .left-container{
+    border: 1px solid red;
     background-image: url("images/bg-main-desktop.png");
     background-repeat: no-repeat;
     width: 50%;
@@ -28,6 +33,7 @@ body{
 
 .right-container{
     background-color: white;
+    border: 1px solid red;
 }
 
 .card1 {
@@ -75,7 +81,8 @@ body{
 
 /* the form */
 .form {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    border: 1px solid red;
     margin-top: 150px;
     margin-left: 100px;
     min-height: 400px;
@@ -155,4 +162,9 @@ button {
     border-radius: 5px;
     display: block;
     font-size: 18px;
+}
+
+/* styling for the confirmation */
+.confirmation {
+    display: none;
 }
