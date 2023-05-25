@@ -9,16 +9,22 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     //checkInputs();
-    //if all required fields are filled out
-    // display the confirmation
-    // else
-    // do nothing & show the form
-    if(allRequiredFieldsAreFilledOut()){
-        //display the confirmation
+    if(checkInputs()){
+
         document.getElementById("confirmation").style.display = "block";
         //hide the form
         document.getElementById("form").style.display = "none";
     }
+    //if all required fields are filled out
+    // display the confirmation
+    // else
+    // do nothing & show the form
+    // if(allRequiredFieldsAreFilledOut()){
+    //     //display the confirmation
+    //     document.getElementById("confirmation").style.display = "block";
+    //     //hide the form
+    //     document.getElementById("form").style.display = "none";
+    // }
 });
 
 function allRequiredFieldsAreFilledOut(){
@@ -56,6 +62,7 @@ function checkInputs() {
 
     //check for valid CVC
     checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only");
+    return true;
 }
 
 function checkForValidCardholderName(cardholderValue, errorMessage){
