@@ -8,36 +8,21 @@ const cvc = document.getElementById("cvc");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    //checkInputs();
-    if(checkInputs()){
-
-        document.getElementById("confirmation").style.display = "block";
-        //hide the form
-        document.getElementById("form").style.display = "none";
-    }
+    checkInputs();
     //if all required fields are filled out
     // display the confirmation
     // else
     // do nothing & show the form
-    // if(allRequiredFieldsAreFilledOut()){
-    //     //display the confirmation
-    //     document.getElementById("confirmation").style.display = "block";
-    //     //hide the form
-    //     document.getElementById("form").style.display = "none";
-    // }
+    if(allRequiredFieldsAreFilledOut() === true){
+        //display the confirmation
+        document.getElementById("confirmation").style.display = "block";
+        //hide the form
+        document.getElementById("form").style.display = "none";
+    }
 });
 
 function allRequiredFieldsAreFilledOut(){
-    // if(checkForValidCardholderName() === true
-    // && checksIfValidFormatFor(creditCardValue, creditCardNumber, "Credit Card cannot be blank", "Invalid Format. Numbers only") === true
-    // && checksIfValidFormatFor(expMonthValue, expYear, "Cannot be blank", "Invalid Format. Numbers only") === true
-    // && checksIfValidFormatFor(expYearValue, expYear, "Cannot be blank", "Invalid Format. Numbers only") === true
-    // && checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only") === true){
-    //     return true;
-    // } else {
-    //     return false;
-    // }
-    return true;
+
 }
 
 function checkInputs() {
@@ -62,7 +47,6 @@ function checkInputs() {
 
     //check for valid CVC
     checksIfValidFormatFor(cvcValue, cvc, "Cannot be blank", "Invalid Format. Numbers only");
-    return true;
 }
 
 function checkForValidCardholderName(cardholderValue, errorMessage){
@@ -89,7 +73,6 @@ function checksIfValidFormatFor(inputFieldValue, inputFieldName, errorMessage1, 
         return false;
     } else {
         setSuccessFor(inputFieldName);
-        return true;
     }
 }
 

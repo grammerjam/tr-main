@@ -56,14 +56,12 @@
             <div class="inputs">
               <input class="cardinput" type="text" id="cnum" name="cardnumber" placeholder="e.g. 1111-2222-3333-4444">
               <small>error message</small>
-            </div>
-            <div>
               <div class="expiration-cvc">
-                <div class="labels-expiration-cvc">
+                <div class="labels" id="labels-expiration-cvc">
                   <label class="cardwords" for="expmonth">Exp. Date (MM/YY)</label>
                   <label class="cardwords" for="cvc">CVC</label>
                 </div>
-                <div class="inputs-expiration-cvc">
+                <div class="inputs" id="inputs-expiration-cvc">
                   <input class="cardmonth" type="text" id="expmonth" name="expmonth" placeholder="07">
                   <input class="cardyear" type="text" id="expyear" name="expyear" placeholder="27">
                   <small>error message</small>
@@ -71,8 +69,8 @@
                   <small>error message</small>
                 </div>
               </div>
-                <button>Confirm</button>
             </div>
+            <button>Confirm</button>
           </form>
         <div class="confirmation">
           <img src="images/icon-complete.svg">
@@ -102,6 +100,13 @@
         - work with the styling of the form
         - work on mobile design
 
+      Notes from 5/24/23
+      * Lia:
+        - finish the confirm page with JS
+        - Will re-deploy via Netlify tomorrow for the final results to submit after Jepson is done tonight
+      * Jepson:
+        - try/finish the credit card value to display in real time as user types
+        - submit a PR for Jimmy once completed
 
       Responsibilites:
       * Jepson:
@@ -110,36 +115,5 @@
       * Lia:
         - complete css for backgrounds for 2 containers
         - complete Yup validations once Jepson is done
-
-
--->
-
-<!--  0000 0000 0000 0000-->
-<!--  Jane Appleseed-->
-<!--  00/00-->
-
-<!--  000-->
-
-<!--  Cardholder Name-->
-<!--  e.g. Jane Appleseed-->
-
-<!--  Card Number-->
-<!--  e.g. 1234 5678 9123 0000-->
-
-<!--  Exp. Date (MM/YY)-->
-<!--  MM-->
-<!--  YY-->
-
-<!--  CVC-->
-<!--  e.g. 123-->
-
-<!--  Confirm-->
-
-  <!-- Completed state start -->
-
-<!--  Thank you!-->
-<!--  We've added your card details-->
-<!--  Continue-->
-  
 </body>
 </html>

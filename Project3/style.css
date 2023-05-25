@@ -100,14 +100,14 @@ body{
 }
 
 /* styling for the labels for expiration and CVC */
-.labels-expiration-cvc {
+#labels-expiration-cvc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 /* input fields for the expiration dates & CVC */
-.inputs-expiration-cvc {
+#inputs-expiration-cvc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,12 +121,12 @@ body{
 
 .cardcvc {
     height: 30px;
-    width: 120px;
+    width: 100%;
     border-radius: 5px;
 }
 
 /* margins & paddings for error messages */
-.inputs, .inputs-expiration-cvc {
+.inputs, .inputs-expiration-cvc{
     margin-bottom: 5px;
     padding-bottom: 5px;
 }
@@ -162,7 +162,7 @@ button {
     font-size: 18px;
 }
 
-/* styling for the confirmation */
+/* styling for the confirmation page */
 .confirmation {
     display: none;
 }
