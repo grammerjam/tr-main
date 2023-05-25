@@ -21,9 +21,9 @@ form.addEventListener('submit', (e) => {
     }
 });
 
-function allRequiredFieldsAreFilledOut(){
-
-}
+// function allRequiredFieldsAreFilledOut(){
+//
+// }
 
 function checkInputs() {
     //get values from inputs
