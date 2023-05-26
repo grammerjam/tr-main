@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
         </div>
         <div class="bottom-of-card">
           <div class="cardholder-name">
-            <small>John Doe</small>
+            <small type="text" id="duplicateField">John Doe</small>
           </div>
           <div class="card-exp-date">
             <div>01/01</div>
@@ -58,8 +58,8 @@
               <small>error message</small>
               <div class="expiration-cvc">
                 <div class="labels" id="labels-expiration-cvc">
-                  <label class="cardwords" for="expmonth">Exp. Date (MM/YY)</label>
-                  <label class="cardwords" for="cvc">CVC</label>
+                  <label class="cardwords-exp" for="expmonth">Exp. Date (MM/YY)</label>
+                  <label class="cardwords-cvc" for="cvc">CVC</label>
                 </div>
                 <div class="inputs" id="inputs-expiration-cvc">
                   <input class="cardmonth" type="text" id="expmonth" name="expmonth" placeholder="07">
@@ -72,12 +72,14 @@
             </div>
             <button>Confirm</button>
           </form>
+        <!--
         <div class="confirmation">
           <img src="images/icon-complete.svg">
           <h1>Thank you!</h1>
           <small>We've added your card details</small>
           <button>Continue</button>
         </div>
+      -->
       </div>
     </div>
   </div>

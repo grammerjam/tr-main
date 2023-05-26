@@ -5,6 +5,13 @@ const expMonth = document.getElementById("expmonth");
 const expYear = document.getElementById("expyear");
 const cvc = document.getElementById("cvc");
 
+// this is suppose to be the code for real time work but it's not working for some reason
+//in full tranparency not my code but i understand how it work so i didnt right it over
+//const duplicateField = document.getElementById("duplicateField");
+//cardHolderName.addEventListener('keyup',() => {
+//    duplicateField.value = input.value;
+//});
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
