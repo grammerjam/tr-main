@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // function allRequiredFieldsAreFilledOut(){
-//
+// debating if I need this or not
 // }
 
 function checkInputs() {
